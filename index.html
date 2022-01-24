@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convention Center</title>
+    <!-- bootstrap css stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Script link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- css stylesheet link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Poppins font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <!-- Font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- header start -->
+    <header class="my-4">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light mb-3 light-black">
+            <div class="container">
+                <h2 class="fw-bold">Takoyaki Convention Center</h2>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto fw-bold">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="unoccupied.html" class="nav-item nav-link">About Us</a>
+                        <a href="unoccupied.html" class="nav-item nav-link">Contact</a>
+                        <a href="unoccupied.html" class="nav-item nav-link">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/banner.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="fw-bold p-3 font-stroke">The perfect venue for your<br> next event</h1>
+                    <p class="font-stroke fw-bold"><span>We discover ourselves in the midst of something that only appeals to our sences.</span>
+                    <br>
+                    <span>that's why, this time, we have created spaces that aim to enliven your occassions.</span></p>
+                    <a href="unoccupied.html"> <button type="button" class="btn book-now btn-lg">Book Now</button></a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/banner-2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="fw-bold p-3 font-stroke">The perfect venue for your<br> next event</h1>
+                    <p class="font-stroke fw-bold"><span>We discover ourselves in the midst of something that only appeals to our sences.</span>
+                    <br>
+                    <span>that's why, this time, we have created spaces that aim to enliven your occassions.</span></p>
+                    <a href="unoccupied.html"><button type="button" class="btn book-now btn-lg">Book Now</button></a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/banner-3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="fw-bold p-3 font-stroke">The perfect venue for your<br> next event</h1>
+                    <p class="font-stroke fw-bold"><span>We discover ourselves in the midst of something that only appeals to our sences.</span>
+                    <br>
+                    <span>that's why, this time, we have created spaces that aim to enliven your occassions.</span></p>
+                    <a href="unoccupied.html"><button type="button" class="btn book-now btn-lg">Book Now</button></a> 
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <main>
+        <!-- toast start -->
+        <div class="float-end bg-warning">
+            <div class="toast" data-autohide="false">
+              <div class="toast-body">
+                  20% off on next booking
+                  <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+              </div>
+            </div>
+        </div>
+        <!-- toast end -->
+        <!-- greetings start -->
+        <section class="container">
+            <!-- Top -->
+            <div class="text-center mt-5">
+                <h3 class="fst-italic text-danger">Greetings & Welcome</h3>
+                <h1 class="fw-bold dark-blue">Dhaka international Convention center</h1>
+                <h1>_  _  _  _</h1>
+                <h5>Takoyaki Convention Center is the largest community center in Dhaka.</h5>
+            </div>
+            <!-- Body -->
+            <div class="row mt-5 pt-5">
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <img src="images/Hnet.com-image.jpg" class="rounded-circle shadow-lg" alt="">
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 mt-5 pt-5" > 
+                    <p><span class="h5 fw-bold">Takoyaki Convention Center (TCC)</span> is the  Country's  1st  largest luxurious Convention Center at No-where in Dhaka. Lovely place and awesome decorations are looking very nice. Our facility and capacity.
+                    <br>
+                    <br>
+                    Takoyaki Convention Center (TCC) is one of the ORIGINAL and LEADING convention centers in Bangladesh. It was established in 2003 with the goal of providing the highest standard of services in the Hospitality Industry. Takoyaki Convention Center offers Luxurious Banquet Halls, Business Conference Rooms, Business Centre, all of which that are equipped with a modern hygienic Kitchen, car parking facilities and a fantastic and cozy location in the central business district of Gulshan, Dhaka.
+                    </p>
+                    <a href="unoccupied.html" type="button" class="btn read-more btn-lg" tabindex="-1" role="button" aria-disabled="true">Read More</a>
+                </div>
+                <!-- Body end -->
+            </div>
+        </section>
+        <!-- greetings end -->
+        <!-- package start -->
+        <section class="container mt-5 pt-5">
+            <div>
+                <h1 class="text-center mb-5 fw-bold light-black">Our package</h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3 py-5 d-flex justify-content-center">
+                    <div>
+                        <h2 class="fw-bold dark-blue">$300</h2>
+                        <h4 class="fw-bold dark-blue">Business fair</h4>
+                        <p class="light-blue">For most businesses event 
+                        <br> like book fair, craft fair.</p>
+                        <p class="light-blue"><i class="fa fa-check-circle"> limited space access</i></p>
+                        <p class="light-blue"><i class="fa fa-check-circle"> Secuirty facility</i></p>
+                        <p class="light-blue"><i class="fa fa-check-circle"> event support</i></p>
+                        <p class="light-blue"><i class="fa fa-check-circle"> Decoration design</i></p>
+                        <p class="light-blue"><i class="fa fa-check-circle"> Per day bill</i></p>
+                        <a href="unoccupied.html"><button type="button" class="btn choose-plan btn-lg">Choose plan</button></a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 py-5 d-flex justify-content-center">
+                    <div>
+                        <h2 class="fw-bold dark-blue">$500</h2>
+                        <h4 class="fw-bold dark-blue">wedding basic</h4>
+                        <p class="light-blue">For weddings with basic plan
+                        <br> and limited item.</p>
+                        <p class="light-blue"><i class="fa fa-check-circle"> Full space access</i></p>
+                        <p class="light-blue"><i class="fa fa-check-circle"> Food arrangement</i></p>
+                        <p class="light-blue"><i class="fa fa-check-circle"> mangement support</i></p>
+                        <p class="light-blue"><i class="fa fa-check-circle"> Decoration design</i></p>
+                        <p class="light-blue"><i class="fa fa-check-circle"> Billed as shift</i></p>
+                        <a href="unoccupied.html"><button type="button" class="btn choose-plan btn-lg">Choose plan</button></a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 py-5 bg-primary border-round shadow-lg d-flex justify-content-center">
+                    <div>
+                        <button type="button" class="btn btn-danger btn-sm border-round hot-position fw-bold">Hot</button>
+                        <h2 class="fw-bold text-white">$800</h2>
+                        <h4 class="fw-bold text-white">Wedding plus</h4>
+                        <p class="text-white">For most weddings with
+                        <br> premium plans</p>
+                        <p class="text-white"><i class="fa fa-check-circle"> Full space access</i></p>
+                        <p class="text-white"><i class="fa fa-check-circle"> Dedicated team</i></p>
+                        <p class="text-white"><i class="fa fa-check-circle"> Buffet food</i></p>
+                        <p class="text-white"><i class="fa fa-check-circle"> Premium Decoration</i></p>
+                        <p class="text-white"><i class="fa fa-check-circle"> Pay as plan</i></p>
+                        <a href="unoccupied.html"><button type="button" class="btn choose-plan btn-lg">Choose plan</button></a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 py-5 d-flex justify-content-center">
+                    <div>
+                        <h2 class="fw-bold dark-blue">$1200</h2>
+                        <h4 class="fw-bold dark-blue">Corporate event</h4>
+                        <p class="light-blue">For most corporate business 
+                        <br> events</p>
+                        <p class="light-blue"><i class="fa fa-check-circle"> Full space access</i></p>
+                        <p class="light-blue"><i class="fa fa-check-circle"> Dedicated team</i></p>
+                        <p class="light-blue"><i class="fa fa-check-circle"> Buffet food</i></p>
+                        <p class="light-blue"><i class="fa fa-check-circle"> Premium Decoration</i></p>
+                        <p class="light-blue"><i class="fa fa-check-circle"> Pay as plan</i></p>
+                        <a href="unoccupied.html"><button type="button" class="btn choose-plan btn-lg">Choose plan</button></a>
+                    </div>
+                </div>
+            </div>
+        <!-- package end -->
+        <!-- Happy clients start -->
+        <section class="container mt-5 pt-5">
+            <h1 class="text-center fw-bold">Happy Clients says</h1>
+            <div class="row justify-content-center pt-5">
+                <div class="col-sm-12 col-md-12 col-lg-3 shadow-lg p-5 m-5 rounded-3 text-center">
+                    <p>Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                    <img src="images/person 1.png" class="my-4" alt="">
+                    <h6 class="fw-bold">Regina Miles</h6>
+                    <p>Banker</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-3 shadow-lg p-5 m-5 rounded-3 text-center">
+                    <p>Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                    <img src="images/person 2.png" class="my-4" alt="">
+                    <h6 class="fw-bold">Jone Drake</h6>
+                    <p>Banker</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-3 shadow-lg p-5 m-5 rounded-3 text-center">
+                    <p>Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                    <img src="images/person 3.png" class="my-4" alt="">
+                    <h6 class="fw-bold">Cret Yater</h6>
+                    <p>Banker</p>
+                </div>
+            </div>
+        </section>
+        <!-- Happy clients end -->
+        <!-- Ask question start -->
+        <section class="container my-5">
+            <h1 class="text-center fw-bold">Frequently Asked Questions</h1>
+            <div class="container mt-5">
+                <div class="row">
+
+                    <div class="col-sm-12 col-md-12 col-lg-6 mb-5">
+                        <div id="accordion">
+                            
+                            <div class="card">
+                              <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                  <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What’s the difference between event design and event planning? 
+                                  </button>
+                                </h5>
+                              </div>
+                              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    Event design and event planning work hand in hand to deliver a successful event.Events by Knight offer tailor made events. This means we incorporate both event design and event planning to create that perfect event.
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                  <button class="btn" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    How early do we need to start planning an event?
+                                  </button>
+                                </h5>
+                              </div>
+                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    Event design and event planning work hand in hand to deliver a successful event.Events by Knight offer tailor made events. This means we incorporate both event design and event planning to create that perfect event.
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                  <button class="btn" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                    What is your refund and cancellation policy?
+                                  </button>
+                                </h5>
+                              </div>
+                              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    Event design and event planning work hand in hand to deliver a successful event.Events by Knight offer tailor made events. This means we incorporate both event design and event planning to create that perfect event.
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                  <h5 class="mb-0">
+                                    <button class="btn" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                        How do you keep budgets on track?
+                                    </button>
+                                  </h5>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                  <div class="card-body">
+                                      Event design and event planning work hand in hand to deliver a successful event.Events by Knight offer tailor made events. This means we incorporate both event design and event planning to create that perfect event.
+                                  </div>
+                                </div>
+                              </div>
+
+                          </div>
+
+                    </div>
+
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <img src="images/people.png" alt="">
+                    </div>
+                </div>
+        </section>
+        <!-- Ask question end -->
+    </main>
+    <footer class="bg-dark p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6 d-flex align-items-center">
+                    <p class="text-white">© 2020 bike. All rights reserved</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 footer-position">
+                    <div class="m-2">
+                        <h4 class="text-white">Get the App</h4>
+                    </div>
+                    <a href="https://www.apple.com/app-store/" class="text-decoration-none"><div class="text-white d-flex border border-white footer-icon m-2 p-2">
+                        <i class="fa fa-apple fs-2"></i>
+                        <p>Download on<br><span>App Store </span></p>
+                    </div></a>
+                    <a href="https://play.google.com/store/apps" class="text-decoration-none"><div class="text-white d-flex border border-white footer-icon m-2 p-2">
+                        <i class="fa fa-play fs-3"></i>
+                        <p>Download on <br><span>Google play </span></p>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+          $('.toast').toast('show');
+        });
+    </script>
+    
+</body>
+</html>
